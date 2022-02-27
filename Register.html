@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div id="login_div" class="main-div">
+  <div class="flex justify-center min-h-screen text-gray-900 bg-gray-100">
+    <div class="flex justify-center flex-1 max-w-screen-xl m-0 bg-white shadow sm:m-20 sm:rounded-lg">
+
+        <div class="flex-1 hidden text-center bg-indigo-100 lg:flex">
+            <div class="w-full m-12 bg-center bg-no-repeat bg-contain xl:m-16"
+                style="background-image: url('https://svgshare.com/i/QeB.svg');"></div>
+        </div>
+
+        <div class="p-6 lg:w-1/2 xl:w-5/12 sm:p-12">
+
+            <div class="flex flex-col items-center mt-4">
+                <h1 class="text-2xl font-extrabold xl:text-3xl">
+                    Sign up
+                </h1>
+                <div class="flex-1 w-full mt-8">
+                    <div class="flex flex-col items-center">
+                        <button
+                            class="flex items-center justify-center w-full max-w-xs py-3 font-bold text-gray-800 transition-all duration-300 ease-in-out bg-red-100 rounded-lg shadow-sm focus:outline-none hover:shadow focus:shadow-sm focus:shadow-outline">
+                            <div class="p-2 bg-white rounded-full">
+                                <svg class="w-4" viewBox="0 0 533.5 544.3">
+                                    <path
+                                        d="M533.5 278.4c0-18.5-1.5-37.1-4.7-55.3H272.1v104.8h147c-6.1 33.8-25.7 63.7-54.4 82.7v68h87.7c51.5-47.4 81.1-117.4 81.1-200.2z"
+                                        fill="#4285f4" />
+                                    <path
+                                        d="M272.1 544.3c73.4 0 135.3-24.1 180.4-65.7l-87.7-68c-24.4 16.6-55.9 26-92.6 26-71 0-131.2-47.9-152.8-112.3H28.9v70.1c46.2 91.9 140.3 149.9 243.2 149.9z"
+                                        fill="#34a853" />
+                                    <path
+                                        d="M119.3 324.3c-11.4-33.8-11.4-70.4 0-104.2V150H28.9c-38.6 76.9-38.6 167.5 0 244.4l90.4-70.1z"
+                                        fill="#fbbc04" />
+                                    <path
+                                        d="M272.1 107.7c38.8-.6 76.3 14 104.4 40.8l77.7-77.7C405 24.6 339.7-.8 272.1 0 169.2 0 75.1 58 28.9 150l90.4 70.1c21.5-64.5 81.8-112.4 152.8-112.4z"
+                                        fill="#ea4335" />
+                                </svg>
+                            </div>
+                            <span class="ml-4">
+                                Sign Up with Google
+                            </span>
+                        </button>
+
+                        <button
+                            class="flex items-center justify-center w-full max-w-xs py-3 mt-5 font-bold text-gray-800 transition-all duration-300 ease-in-out bg-red-100 rounded-lg shadow-sm focus:outline-none hover:shadow focus:shadow-sm focus:shadow-outline">
+                            <div class="p-1 bg-white rounded-full">
+                                <svg class="w-6" viewBox="0 0 32 32">
+                                    <path fill-rule="evenodd"
+                                        d="M16 4C9.371 4 4 9.371 4 16c0 5.3 3.438 9.8 8.207 11.387.602.11.82-.258.82-.578 0-.286-.011-1.04-.015-2.04-3.34.723-4.043-1.609-4.043-1.609-.547-1.387-1.332-1.758-1.332-1.758-1.09-.742.082-.726.082-.726 1.203.086 1.836 1.234 1.836 1.234 1.07 1.836 2.808 1.305 3.492 1 .11-.777.422-1.305.762-1.605-2.664-.301-5.465-1.332-5.465-5.93 0-1.313.469-2.383 1.234-3.223-.121-.3-.535-1.523.117-3.175 0 0 1.008-.32 3.301 1.23A11.487 11.487 0 0116 9.805c1.02.004 2.047.136 3.004.402 2.293-1.55 3.297-1.23 3.297-1.23.656 1.652.246 2.875.12 3.175.77.84 1.231 1.91 1.231 3.223 0 4.61-2.804 5.621-5.476 5.922.43.367.812 1.101.812 2.219 0 1.605-.011 2.898-.011 3.293 0 .32.214.695.824.578C24.566 25.797 28 21.3 28 16c0-6.629-5.371-12-12-12z" />
+                                </svg>
+                            </div>
+                            <span class="ml-4">
+                                Sign Up with GitHub
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="my-12 text-center border-b">
+                        <div
+                            class="inline-block px-2 text-sm font-medium leading-none tracking-wide text-gray-600 transform translate-y-1/2 bg-white">
+                            Or sign up with e-mail
+                        </div>
+                    </div>
+
+                    <div class="max-w-xs mx-auto">
+                        <input
+                            class="w-full px-6 py-4 text-sm font-medium placeholder-gray-500 bg-gray-100 border border-gray-200 rounded-lg focus:outline-none focus:border-gray-400 focus:bg-white" 
+                            type="text" placeholder="Full Name">
+                        <input
+                            class="w-full px-6 py-4 mt-5 text-sm font-medium placeholder-gray-500 bg-gray-100 border border-gray-200 rounded-lg focus:outline-none focus:border-gray-400 focus:bg-white" id="email_field"
+                            type="email" placeholder="Email">
+
+                        <input
+                            class="w-full px-6 py-4 mt-5 text-sm font-medium placeholder-gray-500 bg-gray-100 border border-gray-200 rounded-lg focus:outline-none focus:border-gray-400 focus:bg-white" id="password_field"
+                            type="password" placeholder="Password">
+
+                        <p class="mt-6 text-xs text-center text-gray-600">
+                            I agree to the
+                            <a href="termsandconditions.html" class="border-b border-gray-500 border-dotted">
+                                Terms of Service
+                            </a>
+                            and its
+                            <a href="privacypolicy.html" class="border-b border-gray-500 border-dotted">
+                                Privacy Policy
+                            </a>
+                        </p>
+
+                        <button
+                            class="flex items-center justify-center w-full py-4 mt-5 font-semibold tracking-wide text-gray-100 transition-all duration-300 ease-in-out bg-red-600 rounded-lg hover:bg-red-700 focus:shadow-outline focus:outline-none" onclick="signin()">
+                            <svg class="w-6 h-6 -ml-2" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                                <circle cx="8.5" cy="7" r="4" />
+                                <path d="M20 8v6M23 11h-6" />
+                            </svg>
+                            <span class="ml-3">
+                            Sign Up
+                            </span>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="user_div" class="loggedin-div">
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UserLogin</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css">
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+    body {
+    background-color: black;
+    font-family: "Inter", sans-serif;
+  }
+  body .profile {
+    background-color: #0c0d0e;
+    width: 950px;
+    min-height: 450px;
+    border-radius: 4px;
+    margin: 40px auto;
+    position: relative;
+    float: left;
+    margin-top: 400px;
+    margin-left: 300px;
+  }
+
+  body .profile .banner {
+    background-image: url("http://images6.fanpop.com/image/photos/39600000/Sparkle-Stars-Profile-Banner-smile19-39654242-946-250.jpg");
+    width: 100%;
+    height: 130px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    position: relative;
+  }
+
+  .profile .banner .avatar {
+    position: absolute;
+    left: 45px;
+    bottom: -25px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+  }
+  body .profile .banner .avatar img {
+    width: 100px;
+  }
+  body .profile .banner h4 {
+    color: #fff;
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.35em;
+    position: absolute;
+    bottom: 20px;
+    left: 160px;
+    display: flex;
+    align-items: center;
+  }
+  body .profile .banner h4 span {
+    font-size: 0.6em;
+    margin-left: 5px;
+    color: #cecfcf;
+    background-color: rgba(12, 13, 14, 0.45);
+    padding: 4px 6px;
+    border-radius: 4px;
+  }
+  body .profile .content {
+    color: #e7e7e7;
+    display: flex;
+    align-items: flex-start;
+    padding: 45px 45px;
+  }
+  body .profile .content h5 {
+    font-weight: 400;
+    font-size: 1.25em;
+    margin: 0;
+    margin-bottom: 12px;
+  }
+  body .profile .content .main {
+    width: calc(100% - 270px);
+    flex-shrink: 0;
+  }
+  body .profile .content .posts {
+    margin: 0;
+    padding: 0;
+    margin-right: 30px;
+  }
+  body .profile .content .posts li {
+    list-style: none;
+    margin: 4px 0;
+  }
+  body .profile .content .posts li a {
+    color: unset;
+    text-decoration: unset;
+    display: flex;
+    align-items: center;
+    background-color: #111213;
+    border-radius: 5px;
+    padding: 8px 18px;
+    transition: 320ms ease;
+  }
+  body .profile .content .posts li a:hover {
+    background-color: #08090a;
+  }
+  body .profile .content .posts li a .icon {
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    margin-right: 18px;
+  }
+  body .profile .content .posts li a .icon i {
+    font-size: 1.5em;
+    color: #2e2f30;
+  }
+  body .profile .content .posts li a .txt {
+    display: flex;
+    flex-direction: column;
+  }
+  body .profile .content .posts li a .txt h5 {
+    font-size: 1.15em;
+    margin-bottom: 4px;
+    color: #e7e7e7;
+  }
+  body .profile .content .posts li a .txt .sub {
+    display: flex;
+    align-items: flex-end;
+  }
+  body .profile .content .posts li a .txt .sub span, body .profile .content .posts li a .txt .sub strong {
+    font-size: 0.75em;
+    color: #636465;
+    font-weight: 400;
+  }
+  body .profile .content .posts li.coding .icon i {
+    color: #f97d10;
+  }
+  body .profile .content .posts li.coding strong {
+    color: #f97d10 !important;
+  }
+  body .profile .content .posts li.crypto .icon i {
+    color: #4abbf3;
+  }
+  body .profile .content .posts li.crypto strong {
+    color: #4abbf3 !important;
+  }
+  body .profile .content .posts li.design .icon i {
+    color: #ba3ffc;
+  }
+  body .profile .content .posts li.design strong {
+    color: #ba3ffc !important;
+  }
+  body .profile .content .posts li.general .icon i {
+    color: #259676;
+  }
+  body .profile .content .posts li.general strong {
+    color: #259676 !important;
+  }
+  body .profile .content .side {
+    width: 270px;
+    flex-shrink: 0;
+  }
+  body .profile .content .side p {
+    color: #5a5a5b;
+    font-size: 0.9em;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+.wrapper{
+  background: #171c24;
+  position: relative;
+  width: 100%;
+}
+.wrapper nav{
+  display: flex;
+  max-width: calc(100% - 200px);
+  margin: 0 auto;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .content{
+  display: flex;
+  align-items: center;
+}
+nav .content .links{
+  margin-left: 80px;
+  display: flex;
+}
+.content .logo a{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+}
+.content .links li{
+  list-style: none;
+  line-height: 70px;
+}
+.content .links li a,
+.content .links li label{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 9px 17px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.content .links li label{
+  display: none;
+}
+.content .links li a:hover,
+.content .links li label:hover{
+  background: #323c4e;
+}
+.wrapper .search-icon,
+.wrapper .menu-icon{
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  line-height: 70px;
+  width: 70px;
+  text-align: center;
+}
+.wrapper .menu-icon{
+  display: none;
+}
+.wrapper #show-search:checked ~ .search-icon i::before{
+  content: "\f00d";
+}
+
+.wrapper .search-box{
+  position: absolute;
+  height: 100%;
+  max-width: calc(100% - 50px);
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.wrapper #show-search:checked ~ .search-box{
+  opacity: 1;
+  pointer-events: auto;
+}
+.search-box input{
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  color: #fff;
+  background: #171c24;
+  padding: 0 100px 0 15px;
+}
+.search-box input::placeholder{
+  color: #f2f2f2;
+}
+.search-box .go-icon{
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 60px;
+  width: 70px;
+  background: #171c24;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+.wrapper input[type="checkbox"]{
+  display: none;
+}
+
+/* Dropdown Menu code start */
+.content .links ul{
+  position: absolute;
+  background: #171c24;
+  top: 80px;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+}
+.content .links li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+.content .links ul li a{
+  display: block;
+  width: 100%;
+  line-height: 30px;
+  border-radius: 0px!important;
+}
+.content .links ul ul{
+  position: absolute;
+  top: 0;
+  right: calc(-100% + 8px);
+}
+.content .links ul li{
+  position: relative;
+}
+.content .links ul li:hover ul{
+  top: 0;
+}
+
+/* Responsive code start */
+@media screen and (max-width: 1250px){
+  .wrapper nav{
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  nav .content .links{
+    margin-left: 30px;
+  }
+  .content .links li a{
+    padding: 8px 13px;
+  }
+  .wrapper .search-box{
+    max-width: calc(100% - 100px);
+  }
+  .wrapper .search-box input{
+    padding: 0 100px 0 15px;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .wrapper .menu-icon{
+    display: block;
+  }
+  .wrapper #show-menu:checked ~ .menu-icon i::before{
+    content: "\f00d";
+  }
+  nav .content .links{
+    display: block;
+    position: fixed;
+    background: #14181f;
+    height: 100%;
+    width: 100%;
+    top: 70px;
+    left: -100%;
+    margin-left: 0;
+    max-width: 350px;
+    overflow-y: auto;
+    padding-bottom: 100px;
+    transition: all 0.3s ease;
+  }
+  nav #show-menu:checked ~ .content .links{
+    left: 0%;
+  }
+  .content .links li{
+    margin: 15px 20px;
+  }
+  .content .links li a,
+  .content .links li label{
+    line-height: 40px;
+    font-size: 20px;
+    display: block;
+    padding: 8px 18px;
+    cursor: pointer;
+  }
+  .content .links li a.desktop-link{
+    display: none;
+  }
+
+  /* dropdown responsive code start */
+  .content .links ul,
+  .content .links ul ul{
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    background: none;
+    max-height: 0px;
+    overflow: hidden;
+  }
+  .content .links #show-features:checked ~ ul,
+  .content .links #show-services:checked ~ ul,
+  .content .links #show-items:checked ~ ul{
+    max-height: 100vh;
+  }
+  .content .links ul li{
+    margin: 7px 20px;
+  }
+  .content .links ul li a{
+    font-size: 18px;
+    line-height: 30px;
+    border-radius: 5px!important;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .wrapper nav{
+    padding: 0 10px;
+  }
+  .content .logo a{
+    font-size: 27px;
+  }
+  .wrapper .search-box{
+    max-width: calc(100% - 70px);
+  }
+  .wrapper .search-box .go-icon{
+    width: 30px;
+    right: 0;
+  }
+  .wrapper .search-box input{
+    padding-right: 30px;
+  }
+}
+
+.dummy-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  z-index: -1;
+  padding: 0 20px;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.dummy-text h2{
+  font-size: 45px;
+  margin: 5px 0;
+}
+	</style>
+
+</head>
+<body>
+  <div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+      <div class="logo"><a href="#">ScamStory</a></div>
+        <ul class="links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Story</a></li>
+          <li>
+            <a href="#" class="desktop-link">Common Scams</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features">Common Scams</label>
+            <ul>
+              <li><a href="#">Online Shopping</a></li>
+              <li><a href="#">Phishing</a></li>
+              <li><a href="#">Romace Scams</a></li>
+              <li><a href="#">Crypto</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-link">User</a>
+            <input type="checkbox" id="show-services">
+            <label for="show-services">User</label>
+            <ul>
+              <li><a href="#">Name</a></li>
+              <li><a href="#">Location</a></li>
+              <li><a href="#">Gender</a></li>
+              <li>
+                <a href="#" class="desktop-link">More Items</a>
+                <input type="checkbox" id="show-items">
+                <label for="show-items">More Items</label>
+                <ul>
+                  <li><a href="#">Sub Menu 1</a></li>
+                  <li><a href="#">Sub Menu 2</a></li>
+                  <li><a href="#">Sub Menu 3</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">Feedback</a></li>
+        </ul>
+      </div>
+      <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+      <form action="#" class="search-box">
+        <input type="text" placeholder="Type Something to Search..." required>
+        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+      </form>
+    </nav>
+  </div>
+  <div class="profile">
+  <div class="banner">
+    <div class="avatar">
+      <img src="https://i.pinimg.com/originals/11/3c/2d/113c2d8f8cbd970e42b33584efff9c71.jpg" alt="avatar" />
+    </div>
+    <h4>Damon Salvatore <span>#0000</span></h4>
+  </div>
+  <div class="content">
+    <div class="main">
+      <h5>Shared Stories</h5>
+      <ul class="posts">
+        <li class="coding">
+          <a href="#">
+            <div class="icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="txt">
+              <h5>Paytm Fraud</h5>
+              <div class="sub">
+                <strong>Money>Paytm</strong>
+                <span>-Mobile</span>
+                <span>-2nd February, 2 minutes ago</span>
+                <span>
+                  <i class="fas fa-comments"></i>
+                  3 Replies
+                </span>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="crypto">
+          <a href="#">
+            <div class="icon">
+              <i class="fab fa-bitcoin"></i>
+            </div>
+            <div class="txt">
+              <h5>Crypto Currency</h5>
+              <div class="sub">
+                <strong>Crypto > Mining</strong>
+                <span>-Bitcoin</span>
+                <span>2nd November, 10 minutes ago</span>
+                <span>
+                  <i class="fas fa-comments"></i>
+                3 Replies
+                </span>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="coding">
+          <a href="#">
+            <div class="icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="txt">
+              <h5>Romance Scams</h5>
+              <div class="sub">
+                <strong>Coding > Showcase</strong>
+                <span>Tinder</span>
+                <span>2nd Jan , 2 minutes ago</span>
+                <span>
+                  <i class="fas fa-comments"></i>
+                  3 Replies
+                </span>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="design">
+          <a href="#">
+            <div class="icon">
+              <i class="fas fa-marker"></i>
+            </div>
+            <div class="txt">
+              <h5>Phishing</h5>
+              <div class="sub">
+                <strong>Attack</strong>
+                <span>Safety</span>
+                <span>1st February, 2 minutes ago</span>
+                <span>
+                  <i class="fas fa-comments"></i>
+                  3 Replies
+                </span>
+              </div>
+            </div>
+          </a>
+        </li>
+        </ul>
+    </div>
+    <div class="side">
+      <h5>Bio</h5>
+      <p>No information given.</p>
+      <br>
+      <h5> Websites Submitted - (0)</h5>
+      <h5>Phone Number</h5>
+      <p>000000000000</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+  <button onclick="logout()" style="color:red">Logout</button>
+</div>
+
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      const config = {
+    apiKey: "AIzaSyBaJv-j6S9eHQIZXEx9F5Uhyfdf4gPzfmM",
+    authDomain: "scamstory-34c02.firebaseapp.com",
+    projectId: "scamstory-34c02",
+    storageBucket: "scamstory-34c02.appspot.com",
+    messagingSenderId: "256338282326",
+    appId: "1:256338282326:web:190b306818a83a87ca78f7",
+    measurementId: "G-31B8G7GBMF"
+  };
+      firebase.initializeApp(config);
+    </script>
+    <script>
+      firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+      // User is signed in.
+  
+      document.getElementById("user_div").style.display = "block";
+      document.getElementById("login_div").style.display = "none";
+  
+      var user = firebase.auth().currentUser;
+  
+      if(user != null){
+  
+        var email_id = user.email;
+        document.getElementById("user_para").innerHTML = "Welcome User : " + email_id;
+  
+      }
+  
+    } else {
+      // No user is signed in.
+  
+      document.getElementById("user_div").style.display = "none";
+      document.getElementById("login_div").style.display = "block";
+  
+    }
+  });
+  
+  function login(){
+  
+    var userEmail = document.getElementById("email_field").value;
+    var userPass = document.getElementById("password_field").value;
+  
+    firebase.auth().signInWithEmailAndPassword(userEmail, userPass).catch(function(error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
+  
+      window.alert("Error : " + errorMessage);
+  
+      // ...
+    });
+  
+  }
+  
+  function logout(){
+    firebase.auth().signOut();
+  }
+  
+  function signin(){
+  
+    var userEmail = document.getElementById("email_field").value;
+    var userPass = document.getElementById("password_field").value;
+    firebase.auth().createUserWithEmailAndPassword(userEmail, userPass).catch(function(error) {
+          // Handle Errors here.
+          var errorCode = error.code;
+          var errorMessage = error.message;
+          console.log(errorCode);
+          console.log(errorMessage);
+        });
+  }
+    </script>
+</body>
+</html>
